@@ -91,6 +91,7 @@ namespace ExamEFCore.LibarayDbContext
 
                 if (string.IsNullOrEmpty(Seeding))
                     return false;
+
                 var Member = JsonSerializer.Deserialize<List<Member>>(Seeding,
                     new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 

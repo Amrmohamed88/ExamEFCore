@@ -12,5 +12,5 @@ namespace ExamEFCore.Models
         public string LastName { get; set; } = null!; 
         public DateOnly DateOfBirth { get; set; }
         public ICollection<Book> Books { get; set; } = new HashSet<Book>();
-    }
+    }   
 }
